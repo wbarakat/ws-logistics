@@ -1,49 +1,60 @@
 export default function About() {
-  const founders = [
-    {
-      initials: 'WB',
-      name: 'Waleed Barakat',
-      role: 'Co-Founder',
-      description: '10 years in data science and analytics. Brings systematic prospecting and market analysis.',
-    },
-    {
-      initials: 'SQ',
-      name: 'Shabnam Qureshi',
-      role: 'Co-Founder',
-      description: '8+ years in business management and consulting. Handles relationships and deal negotiation.',
-    },
-  ]
-
   return (
-    <section id="about" className="py-32 border-t border-neutral-800">
+    <section id="about" className="py-32 bg-black">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="max-w-2xl mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Who we are
-          </h2>
-          <p className="text-neutral-400 text-lg">
-            Two founders. Data meets deals.
-          </p>
-        </div>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Content */}
+          <div>
+            <p className="text-sm font-medium text-blue-400 mb-3">About</p>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
+              Data meets relationships
+            </h2>
+            <p className="text-lg text-neutral-400 leading-relaxed mb-6">
+              WS Logistics was founded on a simple idea: the best deals happen when the right
+              people connect. We combine analytical prospecting with relationship-driven
+              deal-making.
+            </p>
+            <p className="text-lg text-neutral-400 leading-relaxed">
+              Based in the DMV, we understand local markets while maintaining a network that
+              spans industries. Whether you&apos;re a supplier looking for buyers or a buyer
+              needing supply, we make the connection.
+            </p>
+          </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {founders.map((founder, index) => (
-            <div
-              key={index}
-              className="p-8 rounded-2xl bg-neutral-900/50 border border-neutral-800"
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center">
-                  <span className="text-lg font-semibold text-accent">{founder.initials}</span>
+          {/* Team */}
+          <div className="space-y-6">
+            <div className="p-6 rounded-2xl bg-neutral-900/30 border border-neutral-800/50">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-white">WB</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold">{founder.name}</h3>
-                  <p className="text-sm text-neutral-500">{founder.role}</p>
+                  <h3 className="font-semibold">Waleed Barakat</h3>
+                  <p className="text-sm text-neutral-500">Co-Founder</p>
                 </div>
               </div>
-              <p className="text-neutral-400 leading-relaxed">{founder.description}</p>
+              <p className="text-neutral-400 text-sm leading-relaxed">
+                10 years in data science and analytics. Brings systematic market research
+                and data-driven prospecting to identify high-value opportunities.
+              </p>
             </div>
-          ))}
+
+            <div className="p-6 rounded-2xl bg-neutral-900/30 border border-neutral-800/50">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-white">SQ</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold">Shabnam Qureshi</h3>
+                  <p className="text-sm text-neutral-500">Co-Founder</p>
+                </div>
+              </div>
+              <p className="text-neutral-400 text-sm leading-relaxed">
+                8+ years in business management and consulting. Handles client relationships,
+                deal negotiation, and strategic partnerships.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,41 +1,47 @@
 export default function WhyUs() {
-  const stats = [
-    { value: '10+', label: 'Years Combined Experience' },
-    { value: 'DMV', label: 'Regional Focus' },
-    { value: '100%', label: 'Commission-Based' },
+  const features = [
+    {
+      title: 'Commission-based',
+      description: 'No retainers, no monthly fees. We only get paid when you close deals.',
+      highlight: '100%',
+    },
+    {
+      title: 'Data-driven',
+      description: 'Systematic prospecting backed by analytics. We find the right accounts, not just any accounts.',
+      highlight: 'Targeted',
+    },
+    {
+      title: 'Relationship-focused',
+      description: 'Real introductions, real conversations. Not spam, not automation.',
+      highlight: 'Personal',
+    },
   ]
 
   return (
-    <section className="py-32 border-t border-neutral-800">
+    <section className="py-32 bg-neutral-950">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              We only win when you win
-            </h2>
-            <p className="text-neutral-400 text-lg leading-relaxed mb-6">
-              No retainers. No monthly fees. We work on commission, which means
-              our success is tied directly to yours. If we don&apos;t deliver accounts,
-              you don&apos;t pay.
-            </p>
-            <p className="text-neutral-400 text-lg leading-relaxed">
-              We bring analytical rigor to prospecting and relationship-driven
-              deal-making to closing. It&apos;s a combination that works.
-            </p>
-          </div>
+        {/* Section header */}
+        <div className="text-center max-w-2xl mx-auto mb-20">
+          <p className="text-sm font-medium text-blue-400 mb-3">Why work with us</p>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+            Aligned incentives, better outcomes
+          </h2>
+          <p className="text-lg text-neutral-400">
+            Our success is tied directly to yours. If we don&apos;t deliver, you don&apos;t pay.
+          </p>
+        </div>
 
-          <div className="grid grid-cols-3 gap-6">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center p-6">
-                <div className="text-4xl sm:text-5xl font-bold text-accent mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-neutral-500 uppercase tracking-wider">
-                  {stat.label}
-                </div>
+        {/* Features */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div key={index} className="text-center">
+              <div className="text-5xl font-bold text-blue-400 mb-4">
+                {feature.highlight}
               </div>
-            ))}
-          </div>
+              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <p className="text-neutral-400">{feature.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
