@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'WS Logistics | UCO Brokerage Services in the DMV',
-  description: 'WS Logistics connects restaurants with used cooking oil (UCO) recyclers across DC, Maryland, and Virginia. Reliable pickups, competitive rates, and professional service.',
-  keywords: ['UCO', 'used cooking oil', 'recycling', 'DMV', 'Maryland', 'Virginia', 'DC', 'grease pickup', 'restaurant services'],
+  title: 'WS Logistics | Account Brokerage & Business Development',
+  description: 'WS Logistics connects suppliers with buyers across industries. Expert account brokerage, deal negotiation, and business development services.',
+  keywords: ['account brokerage', 'business development', 'B2B', 'supplier connections', 'deal negotiation'],
 }
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   )
 }
