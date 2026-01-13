@@ -20,14 +20,9 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-              <span className="text-sm font-bold text-white">W</span>
-            </div>
-            <div className="flex items-baseline gap-1">
-              <span className="text-lg font-semibold tracking-tight">WS</span>
-              <span className="text-lg font-light text-neutral-400 tracking-tight">Logistics</span>
-            </div>
+          <a href="#" className="flex items-baseline gap-1">
+            <span className="text-lg font-semibold tracking-tight">WS</span>
+            <span className="text-lg font-light text-neutral-400 tracking-tight">Logistics</span>
           </a>
 
           <nav className="hidden sm:flex items-center gap-8">
