@@ -37,7 +37,7 @@ export default function Contact() {
           </div>
 
           {/* Form */}
-          <form action="https://formspree.io/f/xpwzgvvk" method="POST" className="space-y-4">
+          <form action="https://formspree.io/f/mvzzonba" method="POST" className="space-y-4">
             <div className="grid sm:grid-cols-2 gap-4">
               <input
                 type="text"
